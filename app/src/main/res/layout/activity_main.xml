@@ -33,7 +33,6 @@
 
         <Button
             android:id="@+id/btn_llamar"
-            android:onClick="llamarVeterinaria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/header_phone"
@@ -78,7 +77,6 @@
 
             <Button
                 android:id="@+id/boton_solicitar_turno"
-                android:onClick="agregarTurnoDinamico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium"
