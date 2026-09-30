@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">CentroVeterinarioApp</string>
+    <string name="app_name">Veterinaria Puchernau-Chion</string>
+    <string name="header_phone">+54 9 2323 360618</string>
+    <string name="hero_title">Veterinaria Puchernau-Chion</string>
+    <string name="hero_desc">Ofrecemos atención clínica integral, guardia veterinaria, diagnóstico por imágenes y cuidados preventivos para que tu mascota viva sana y feliz.</string>
+    <string name="btn_solicitar_turno">Solicitar turno rápido</string>
+
+    <string name="section_servicios">Nuestros Servicios</string>
+    <string name="service_clinica_title">Clínica Médica</string>
+    <string name="service_clinica_desc">Consultas generales, diagnóstico y control de cachorros y adultos.</string>
+    <string name="service_vacunacion_title">Vacunación</string>
+    <string name="service_vacunacion_desc">Calendario completo antirrábica y quíntuple para perros y gatos.</string>
+    <string name="service_cirugia_title">Cirugía y Cirugía Menor</string>
+    <string name="service_cirugia_desc">Quirófano equipado para castraciones y cirugías generales.</string>
+
+    <string name="section_solicitudes">Turnos Solicitados en Vivo</string>
+    <string name="turno_confirmado">✔ Turno #%d solicitado para hoy (En espera de confirmación)</string>
+    <string name="toast_turno_ok">¡Turno registrado en pantalla con éxito!</string>
+    <string name="toast_llamando">Marcando teléfono de guardia...</string>
 </resources>
