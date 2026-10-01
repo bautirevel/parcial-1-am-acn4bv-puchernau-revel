@@ -6,10 +6,14 @@
 
 ---
 
-## 1. Temática y Elección de Pantalla
+## 1. Temática, Organización y Elección de Pantalla
 Para el desarrollo de la aplicación móvil se tomó como base el sistema de gestión y atención de una clínica veterinaria.
 
-De acuerdo con las pautas del parcial, se seleccionó para esta primera entrega la **Pantalla de Inicio / Landing**, ya que constituye el punto de acceso principal del usuario a los servicios del establecimiento y reúne las condiciones estructurales requeridas para la interfaz.
+De acuerdo con las pautas del parcial, se seleccionó para esta primera entrega la **Pantalla de Inicio / Landing**, ya que constituye el punto de acceso principal del usuario a los servicios del establecimiento y reúne las condiciones estructurales requeridas para la interfaz. Tuvimos la idea en particular a raíz de un parcial anterior, en el que desarrollamos las distintas pantallas en formato desktop, lo cual nos facilitó ciertamente las cosas al no tener que empezar puramente desde cero.
+
+Enlace al figma con el mockup original de nuestra web: https://www.figma.com/design/SlmnKYdz3raIiu5scLE7vf/ACN3BV-Veterinaria--Baffa--Revel-Chion--Marone--Bra%C3%B1a?node-id=0-1&t=v5J7eE6qVaLWSqDt-1
+
+Además adjuntamos en esta misma carpeta la imagen del mockup en papel a modo de guía muy básica.
 
 ---
 

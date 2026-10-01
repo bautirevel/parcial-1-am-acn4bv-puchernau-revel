@@ -80,9 +80,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium"
+                android:background="@color/colorAccent"
                 android:text="@string/btn_solicitar_turno"
-                android:textColor="@android:color/white"
-                android:background="@color/colorAccent" />
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/titulo_servicios"
@@ -142,8 +142,9 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@android:drawable/ic_menu_compass"
-                    android:contentDescription="Vacunacion" />
+                    android:contentDescription="Vacunacion"
+                    android:rotationX="-2"
+                    android:src="@android:drawable/ic_menu_compass" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
