@@ -5,7 +5,9 @@
     <color name="colorAccent">#1976D2</color>
     <color name="colorBackground">#F5F5F5</color>
     <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorCardBorder">#E0E0E0</color>
     <color name="colorTextPrimary">#212121</color>
     <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextOnPrimary">#FFFFFF</color>
     <color name="colorSuccess">#2E7D32</color>
 </resources>
