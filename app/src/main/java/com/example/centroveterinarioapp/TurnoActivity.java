@@ -89,6 +89,36 @@ public class TurnoActivity extends AppCompatActivity {
 
         inputMascota.setText("");
         inputDuenio.setText("");
+
+        Snackbar.make(root, R.string.snack_turno_agregado, Snackbar.LENGTH_LONG)
+                .setAction(R.string.snack_deshacer, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        turnos.remove(turnos.size() - 1);
+                        guardarTurnos();
+                        mostrarTurnos();
+                        Toast.makeText(TurnoActivity.this, R.string.toast_turno_deshecho, Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .show();
+    }
+
+    private void borrarTurno(final int posicion) {
+        final String borrado = turnos.remove(posicion);
+        guardarTurnos();
+        mostrarTurnos();
+
+        Snackbar.make(root, R.string.snack_turno_borrado, Snackbar.LENGTH_LONG)
+                .setAction(R.string.snack_deshacer, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        turnos.add(posicion, borrado);
+                        guardarTurnos();
+                        mostrarTurnos();
+                        Toast.makeText(TurnoActivity.this, R.string.toast_turno_deshecho, Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .show();
     }
 
     private void mostrarTurnos() {
@@ -106,6 +136,15 @@ public class TurnoActivity extends AppCompatActivity {
 
             textoTurno.setText(getString(R.string.turno_texto, campos[0], campos[1], campos[2]));
             textoDuenio.setText(getString(R.string.turno_duenio, campos[3]));
+
+            final int posicion = i;
+            tarjeta.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    borrarTurno(posicion);
+                    return true;
+                }
+            });
 
             contenedorTurnos.addView(tarjeta);
         }
