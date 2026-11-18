@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_detalle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".DetalleServicioActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedor_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+        <ImageView
+            android:id="@+id/imagen_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detalle_image_height"
+            android:contentDescription="@string/titulo_servicios"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/titulo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/precio_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:textColor="@color/colorSuccess"
+            android:textSize="@dimen/text_size_subtitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descripcion_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:lineSpacingExtra="4sp"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_size_body" />
+
+        <Button
+            android:id="@+id/boton_turno_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/btn_turno_servicio" />
+
+    </LinearLayout>
+</ScrollView>

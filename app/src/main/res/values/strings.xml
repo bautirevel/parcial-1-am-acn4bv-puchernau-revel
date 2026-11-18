@@ -32,4 +32,7 @@
     <string name="snack_turno_borrado">Turno borrado</string>
     <string name="snack_deshacer">Deshacer</string>
     <string name="toast_turno_deshecho">Se deshizo la acción</string>
+    <string name="titulo_servicios">Nuestros servicios</string>
+    <string name="btn_turno_servicio">Pedir turno para este servicio</string>
+    <string name="error_sin_servicio">No se encontró el servicio.</string>
 </resources>
