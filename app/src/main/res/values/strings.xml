@@ -4,7 +4,6 @@
     <string name="hero_title">Veterinaria Puchernau-Chion</string>
     <string name="hero_desc">Ofrecemos atención clínica integral, guardia veterinaria, diagnóstico por imágenes y cuidados preventivos para que tu mascota viva sana y feliz.</string>
     <string name="btn_solicitar_turno">Solicitar turno rápido</string>
-
     <string name="section_servicios">Nuestros Servicios</string>
     <string name="service_clinica_title">Clínica Médica</string>
     <string name="service_clinica_desc">Consultas generales, diagnóstico y control de cachorros y adultos.</string>
@@ -12,9 +11,25 @@
     <string name="service_vacunacion_desc">Calendario completo antirrábica y quíntuple para perros y gatos.</string>
     <string name="service_cirugia_title">Cirugía y Cirugía Menor</string>
     <string name="service_cirugia_desc">Quirófano equipado para castraciones y cirugías generales.</string>
-
     <string name="section_solicitudes">Turnos Solicitados en Vivo</string>
     <string name="turno_confirmado">✔ Turno #%d solicitado para hoy (En espera de confirmación)</string>
     <string name="toast_turno_ok">¡Turno registrado en pantalla con éxito!</string>
     <string name="toast_llamando">Marcando teléfono de guardia...</string>
+    <string name="titulo_turno">Pedir turno</string>
+    <string name="servicio_elegido">Servicio: %s</string>
+    <string name="servicio_por_defecto">Clínica Médica</string>
+    <string name="hint_mascota">Nombre de la mascota</string>
+    <string name="hint_duenio">Nombre del dueño</string>
+    <string name="especie_perro">Perro</string>
+    <string name="especie_gato">Gato</string>
+    <string name="btn_agregar_turno">Agregar turno</string>
+    <string name="section_turnos_pedidos">Turnos pedidos</string>
+    <string name="ayuda_borrar_turno">Mantené apretado un turno para borrarlo.</string>
+    <string name="error_campos_vacios">Por favor, completá el nombre de la mascota y del dueño</string>
+    <string name="turno_texto">%1$s (%2$s) - %3$s</string>
+    <string name="turno_duenio">Dueño: %s</string>
+    <string name="snack_turno_agregado">Turno agregado</string>
+    <string name="snack_turno_borrado">Turno borrado</string>
+    <string name="snack_deshacer">Deshacer</string>
+    <string name="toast_turno_deshecho">Se deshizo la acción</string>
 </resources>

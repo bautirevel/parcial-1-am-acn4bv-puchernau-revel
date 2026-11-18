@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/spacing_small"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/spacing_medium">
+
+    <TextView
+        android:id="@+id/texto_turno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/texto_duenio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/text_size_body" />
+</LinearLayout>
