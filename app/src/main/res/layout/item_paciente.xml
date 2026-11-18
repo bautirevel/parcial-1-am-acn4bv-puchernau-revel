@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/spacing_medium"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/spacing_small">
+
+    <ImageView
+        android:id="@+id/imagen_paciente"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/galeria_image_height"
+        android:contentDescription="@string/titulo_galeria"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/texto_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_size_body"
+        android:textStyle="bold" />
+</LinearLayout>

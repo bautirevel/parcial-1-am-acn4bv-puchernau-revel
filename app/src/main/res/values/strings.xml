@@ -51,4 +51,10 @@
     <string name="service_peluqueria_detalle">Baño con shampoo dermatológico, secado, corte según la raza, limpieza de oídos y corte de uñas. Tu mascota sale limpia y cómoda.</string>
     <string name="service_peluqueria_precio">Baño y corte desde $22.000</string>
     <string name="service_peluqueria_img">https://images.pexels.com/photos/6235017/pexels-photo-6235017.jpeg?auto=compress&amp;w=800</string>
+    <string name="titulo_galeria">Pacientes felices</string>
+    <string name="subtitulo_galeria">Algunos de los perros que pasaron por la veterinaria.</string>
+    <string name="btn_cargar_mas">Cargar más</string>
+    <string name="url_galeria">https://dog.ceo/api/breeds/image/random/6</string>
+    <string name="error_galeria">No se pudieron cargar las fotos. Revisá tu conexión.</string>
+    <string name="raza">Raza: %s</string>
 </resources>
