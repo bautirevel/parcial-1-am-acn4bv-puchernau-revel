@@ -56,6 +56,9 @@ public class TurnoActivity extends AppCompatActivity {
         }
         textoServicio.setText(getString(R.string.servicio_elegido, servicioElegido));
 
+        leerTurnos();
+        mostrarTurnos();
+
         botonAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +84,7 @@ public class TurnoActivity extends AppCompatActivity {
         String turno = mascota + SEPARADOR_CAMPOS + especie + SEPARADOR_CAMPOS
                 + servicioElegido + SEPARADOR_CAMPOS + duenio;
         turnos.add(turno);
+        guardarTurnos();
         mostrarTurnos();
 
         inputMascota.setText("");
@@ -104,6 +108,31 @@ public class TurnoActivity extends AppCompatActivity {
             textoDuenio.setText(getString(R.string.turno_duenio, campos[3]));
 
             contenedorTurnos.addView(tarjeta);
+        }
+    }
+
+    private void guardarTurnos() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        String texto = "";
+        for (int i = 0; i < turnos.size(); i++) {
+            if (i > 0) {
+                texto = texto + SEPARADOR_TURNOS;
+            }
+            texto = texto + turnos.get(i);
+        }
+        editor.putString(KEY_TURNOS, texto);
+        editor.apply();
+    }
+
+    private void leerTurnos() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String guardados = prefs.getString(KEY_TURNOS, "");
+        turnos.clear();
+        if (!guardados.isEmpty()) {
+            for (String turno : guardados.split(SEPARADOR_TURNOS)) {
+                turnos.add(turno);
+            }
         }
     }
 
