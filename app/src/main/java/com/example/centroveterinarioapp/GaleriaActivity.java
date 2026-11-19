@@ -34,6 +34,7 @@ public class GaleriaActivity extends AppCompatActivity {
     private LinearLayout contenedorPacientes;
     private ProgressBar barraProgreso;
     private Button botonCargarMas;
+    private Call llamadaActual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +65,8 @@ public class GaleriaActivity extends AppCompatActivity {
                 .url(getString(R.string.url_galeria))
                 .build();
 
-        client.newCall(request).enqueue(new Callback() {
+        llamadaActual = client.newCall(request);
+        llamadaActual.enqueue(new Callback() {
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 mostrarError();
@@ -137,5 +139,13 @@ public class GaleriaActivity extends AppCompatActivity {
                 Toast.makeText(GaleriaActivity.this, R.string.error_galeria, Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (llamadaActual != null) {
+            llamadaActual.cancel();
+        }
     }
 }
