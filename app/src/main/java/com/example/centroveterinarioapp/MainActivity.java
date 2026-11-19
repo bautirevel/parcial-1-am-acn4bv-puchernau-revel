@@ -8,8 +8,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView imagenHero = findViewById(R.id.imagen_hero);
+        Glide.with(this)
+                .load(getString(R.string.url_imagen_hero))
+                .into(imagenHero);
 
         Button botonLlamar = findViewById(R.id.btn_llamar);
         Button botonServicios = findViewById(R.id.boton_ver_servicios);
