@@ -3,28 +3,25 @@ package com.example.centroveterinarioapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    private LinearLayout contenedorTurnos;
-    private int contadorTurnos = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        contenedorTurnos = findViewById(R.id.contenedor_turnos_dinamicos);
-
         Button botonLlamar = findViewById(R.id.btn_llamar);
-        Button botonTurno = findViewById(R.id.boton_solicitar_turno);
+        Button botonServicios = findViewById(R.id.boton_ver_servicios);
+        Button botonTurno = findViewById(R.id.boton_pedir_turno);
+        Button botonGaleria = findViewById(R.id.boton_galeria);
 
         botonLlamar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,30 +30,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        botonServicios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ServiciosActivity.class);
+                startActivity(intent);
+            }
+        });
+
         botonTurno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                agregarTurnoDinamico();
+                Intent intent = new Intent(MainActivity.this, TurnoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        botonGaleria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GaleriaActivity.class);
+                startActivity(intent);
             }
         });
     }
 
     public void llamarVeterinaria() {
-        Uri uri = Uri.parse("tel:1144558899");
+        Uri uri = Uri.parse(getString(R.string.telefono_guardia));
         Intent intent = new Intent(Intent.ACTION_DIAL, uri);
         startActivity(intent);
 
-        Toast.makeText(this, "Marcando teléfono de guardia...", Toast.LENGTH_SHORT).show();
-    }
-
-    public void agregarTurnoDinamico() {
-        contadorTurnos++;
-
-        TextView nuevoTurno = new TextView(this);
-        nuevoTurno.setText("Turno #" + contadorTurnos + " solicitado");
-
-        contenedorTurnos.addView(nuevoTurno);
-
-        Toast.makeText(this, "Turno registrado en pantalla", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.toast_llamando, Toast.LENGTH_SHORT).show();
     }
 }

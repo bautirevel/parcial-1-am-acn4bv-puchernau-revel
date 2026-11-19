@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Veterinaria Puchernau-Chion</string>
-    <string name="header_phone">+54 9 2323 360618</string>
+    <string name="header_phone">Llamar</string>
     <string name="hero_title">Veterinaria Puchernau-Chion</string>
     <string name="hero_desc">Ofrecemos atención clínica integral, guardia veterinaria, diagnóstico por imágenes y cuidados preventivos para que tu mascota viva sana y feliz.</string>
     <string name="btn_solicitar_turno">Solicitar turno rápido</string>
@@ -57,4 +57,13 @@
     <string name="url_galeria">https://dog.ceo/api/breeds/image/random/6</string>
     <string name="error_galeria">No se pudieron cargar las fotos. Revisá tu conexión.</string>
     <string name="raza">Raza: %s</string>
+    <string name="telefono_guardia">tel:1144558899</string>
+    <string name="hero_imagen_desc">Veterinaria atendiendo a un perro</string>
+    <string name="url_imagen_hero">https://images.pexels.com/photos/7474858/pexels-photo-7474858.jpeg?auto=compress&amp;w=800</string>
+    <string name="btn_ver_servicios">Ver servicios</string>
+    <string name="btn_pedir_turno">Pedir turno</string>
+    <string name="btn_galeria">Pacientes felices</string>
+    <string name="section_mis_turnos">Mis turnos</string>
+    <string name="resumen_turnos_vacio">Todavía no pediste turnos.</string>
+    <string name="resumen_turnos">Tenés %d turno(s) pedido(s).</string>
 </resources>
