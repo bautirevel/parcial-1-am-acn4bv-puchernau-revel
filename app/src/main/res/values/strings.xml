@@ -1,20 +1,51 @@
 <resources>
     <string name="app_name">Veterinaria Puchernau-Chion</string>
     <string name="header_phone">Llamar</string>
+    <string name="telefono_guardia">tel:1144558899</string>
     <string name="hero_title">Veterinaria Puchernau-Chion</string>
     <string name="hero_desc">Ofrecemos atención clínica integral, guardia veterinaria, diagnóstico por imágenes y cuidados preventivos para que tu mascota viva sana y feliz.</string>
-    <string name="btn_solicitar_turno">Solicitar turno rápido</string>
-    <string name="section_servicios">Nuestros Servicios</string>
+    <string name="hero_imagen_desc">Veterinaria atendiendo a un perro</string>
+    <string name="url_imagen_hero">https://images.pexels.com/photos/7474858/pexels-photo-7474858.jpeg?auto=compress&amp;w=800</string>
+
+    <string name="btn_ver_servicios">Ver servicios</string>
+    <string name="btn_pedir_turno">Pedir turno</string>
+    <string name="btn_galeria">Pacientes felices</string>
+    <string name="section_mis_turnos">Mis turnos</string>
+    <string name="resumen_turnos_vacio">Todavía no pediste turnos.</string>
+    <string name="resumen_turnos">Tenés %d turno(s) pedido(s).</string>
+    <string name="toast_llamando">Marcando teléfono de guardia...</string>
+
+    <string name="titulo_servicios">Nuestros servicios</string>
+    <string name="subtitulo_servicios">Tocá un servicio para ver el detalle.</string>
+    <string name="toast_servicio_elegido">Elegiste: %s</string>
+
     <string name="service_clinica_title">Clínica Médica</string>
     <string name="service_clinica_desc">Consultas generales, diagnóstico y control de cachorros y adultos.</string>
+    <string name="service_clinica_detalle">Revisamos a tu mascota de punta a punta: peso, temperatura, piel, oídos, dientes y corazón. Ideal para controles anuales o cuando notás que algo no anda bien.</string>
+    <string name="service_clinica_precio">Consulta: $25.000</string>
+    <string name="service_clinica_img">https://images.pexels.com/photos/6235114/pexels-photo-6235114.jpeg?auto=compress&amp;w=800</string>
+
     <string name="service_vacunacion_title">Vacunación</string>
     <string name="service_vacunacion_desc">Calendario completo antirrábica y quíntuple para perros y gatos.</string>
+    <string name="service_vacunacion_detalle">Aplicamos el plan sanitario completo: séxtuple y antirrábica para perros, triple felina y antirrábica para gatos. Te entregamos la libreta sanitaria actualizada.</string>
+    <string name="service_vacunacion_precio">Desde $18.000 por dosis</string>
+    <string name="service_vacunacion_img">https://images.pexels.com/photos/7469220/pexels-photo-7469220.jpeg?auto=compress&amp;w=800</string>
+
     <string name="service_cirugia_title">Cirugía</string>
     <string name="service_cirugia_desc">Quirófano equipado para castraciones y cirugías generales.</string>
-    <string name="section_solicitudes">Turnos Solicitados en Vivo</string>
-    <string name="turno_confirmado">✔ Turno #%d solicitado para hoy (En espera de confirmación)</string>
-    <string name="toast_turno_ok">¡Turno registrado en pantalla con éxito!</string>
-    <string name="toast_llamando">Marcando teléfono de guardia...</string>
+    <string name="service_cirugia_detalle">Castraciones, extracción de tumores y cirugías de tejidos blandos con anestesia inhalatoria y monitoreo durante toda la intervención. Incluye control posquirúrgico.</string>
+    <string name="service_cirugia_precio">Castración desde $90.000</string>
+    <string name="service_cirugia_img">https://images.pexels.com/photos/6234618/pexels-photo-6234618.jpeg?auto=compress&amp;w=800</string>
+
+    <string name="service_peluqueria_title">Peluquería</string>
+    <string name="service_peluqueria_desc">Baño, corte de pelo y corte de uñas.</string>
+    <string name="service_peluqueria_detalle">Baño con shampoo dermatológico, secado, corte según la raza, limpieza de oídos y corte de uñas. Tu mascota sale limpia y cómoda.</string>
+    <string name="service_peluqueria_precio">Baño y corte desde $22.000</string>
+    <string name="service_peluqueria_img">https://images.pexels.com/photos/6235017/pexels-photo-6235017.jpeg?auto=compress&amp;w=800</string>
+
+    <string name="btn_turno_servicio">Pedir turno para este servicio</string>
+    <string name="error_sin_servicio">No se encontró el servicio.</string>
+
     <string name="titulo_turno">Pedir turno</string>
     <string name="servicio_elegido">Servicio: %s</string>
     <string name="servicio_por_defecto">Clínica Médica</string>
@@ -32,38 +63,11 @@
     <string name="snack_turno_borrado">Turno borrado</string>
     <string name="snack_deshacer">Deshacer</string>
     <string name="toast_turno_deshecho">Se deshizo la acción</string>
-    <string name="titulo_servicios">Nuestros servicios</string>
-    <string name="btn_turno_servicio">Pedir turno para este servicio</string>
-    <string name="error_sin_servicio">No se encontró el servicio.</string>
-    <string name="subtitulo_servicios">Tocá un servicio para ver el detalle.</string>
-    <string name="toast_servicio_elegido">Elegiste: %s</string>
-    <string name="service_clinica_detalle">Revisamos a tu mascota de punta a punta: peso, temperatura, piel, oídos, dientes y corazón. Ideal para controles anuales o cuando notás que algo no anda bien.</string>
-    <string name="service_clinica_precio">Consulta: $25.000</string>
-    <string name="service_clinica_img">https://images.pexels.com/photos/6235114/pexels-photo-6235114.jpeg?auto=compress&amp;w=800</string>
-    <string name="service_vacunacion_detalle">Aplicamos el plan sanitario completo: séxtuple y antirrábica para perros, triple felina y antirrábica para gatos. Te entregamos la libreta sanitaria actualizada.</string>
-    <string name="service_vacunacion_precio">Desde $18.000 por dosis</string>
-    <string name="service_vacunacion_img">https://images.pexels.com/photos/7469220/pexels-photo-7469220.jpeg?auto=compress&amp;w=800</string>
-    <string name="service_cirugia_detalle">Castraciones, extracción de tumores y cirugías de tejidos blandos con anestesia inhalatoria y monitoreo durante toda la intervención. Incluye control posquirúrgico.</string>
-    <string name="service_cirugia_precio">Castración desde $90.000</string>
-    <string name="service_cirugia_img">https://images.pexels.com/photos/6234618/pexels-photo-6234618.jpeg?auto=compress&amp;w=800</string>
-    <string name="service_peluqueria_title">Peluquería</string>
-    <string name="service_peluqueria_desc">Baño, corte de pelo y corte de uñas.</string>
-    <string name="service_peluqueria_detalle">Baño con shampoo dermatológico, secado, corte según la raza, limpieza de oídos y corte de uñas. Tu mascota sale limpia y cómoda.</string>
-    <string name="service_peluqueria_precio">Baño y corte desde $22.000</string>
-    <string name="service_peluqueria_img">https://images.pexels.com/photos/6235017/pexels-photo-6235017.jpeg?auto=compress&amp;w=800</string>
+
     <string name="titulo_galeria">Pacientes felices</string>
     <string name="subtitulo_galeria">Algunos de los perros que pasaron por la veterinaria.</string>
     <string name="btn_cargar_mas">Cargar más</string>
     <string name="url_galeria">https://dog.ceo/api/breeds/image/random/6</string>
     <string name="error_galeria">No se pudieron cargar las fotos. Revisá tu conexión.</string>
     <string name="raza">Raza: %s</string>
-    <string name="telefono_guardia">tel:1144558899</string>
-    <string name="hero_imagen_desc">Veterinaria atendiendo a un perro</string>
-    <string name="url_imagen_hero">https://images.pexels.com/photos/7474858/pexels-photo-7474858.jpeg?auto=compress&amp;w=800</string>
-    <string name="btn_ver_servicios">Ver servicios</string>
-    <string name="btn_pedir_turno">Pedir turno</string>
-    <string name="btn_galeria">Pacientes felices</string>
-    <string name="section_mis_turnos">Mis turnos</string>
-    <string name="resumen_turnos_vacio">Todavía no pediste turnos.</string>
-    <string name="resumen_turnos">Tenés %d turno(s) pedido(s).</string>
 </resources>
