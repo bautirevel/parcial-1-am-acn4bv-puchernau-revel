@@ -16,10 +16,14 @@ import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView resumenTurnos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        resumenTurnos = findViewById(R.id.texto_resumen_turnos);
 
         ImageView imagenHero = findViewById(R.id.imagen_hero);
         Glide.with(this)
@@ -61,6 +65,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        actualizarResumenTurnos();
+    }
+
+    private void actualizarResumenTurnos() {
+        SharedPreferences prefs = getSharedPreferences(TurnoActivity.PREFS_NAME, MODE_PRIVATE);
+        String guardados = prefs.getString(TurnoActivity.KEY_TURNOS, "");
+        int cantidad = 0;
+        if (!guardados.isEmpty()) {
+            cantidad = guardados.split(TurnoActivity.SEPARADOR_TURNOS).length;
+        }
+
+        if (cantidad == 0) {
+            resumenTurnos.setText(R.string.resumen_turnos_vacio);
+        } else {
+            resumenTurnos.setText(getString(R.string.resumen_turnos, cantidad));
+        }
     }
 
     public void llamarVeterinaria() {
